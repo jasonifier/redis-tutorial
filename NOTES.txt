@@ -1,0 +1,9 @@
+
+Main Article Link: https://realpython.com/python-redis/
+
+Follow instructions from article to install Redis (5-10 min)
+Start server command: redis-server /etc/redis/6379.conf
+
+Other helpful articles:
+http://peter-hoffmann.com/2012/python-simple-queue-redis-queue.html
+https://pythontic.com/database/redis/list
