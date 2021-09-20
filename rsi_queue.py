@@ -48,5 +48,8 @@ class RedisQueue(object):
     def read_all(self):
         items = self._db.lrange(self.key, 0, -1)
         if self.use_json:
-            return [json.loads(item) for item in items]
+            try:
+                return [json.loads(item) for item in items]
+            except Exception as e:
+                pass
         return items
